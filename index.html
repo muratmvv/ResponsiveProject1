@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ResponsiveProject1/css/index.css"></link>
+    <title>Responsive  Web Project with HTML5 and CSS3</title>
+</head>
+<body>
+    <nav class="topnav" id="topnavID">
+         <div class="container">
+                <div class="logo">
+                    <a href="index.html">Logo Space</a>
+                </div>
+                <div class="menu">
+                    <a href="#header" class="active">Anasayfa</a>
+                    <a href="#aboutUs">Hakkımızda</a>
+                    <a href="#whyUs">Neden Biz</a>
+                    <a href="#contact">İletişim</a>
+                    <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">&#9776;</a>
+                </div>
+         </div>
+        </nav>
+
+    <!-- Header Alanı -->
+    <header id="#aboutUs">
+        <h2>Welcome to <span>Our Website</span></h2>
+        <p>We are the best to create a creative Website</p>
+    </header>
+
+
+    <!-- Content -->
+    <main>
+        <!-- About Us -->
+        <section id="aboutUs">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="firstTitle">About Us</h1>
+                    <h2 class="secondTitle">We are the best</h2>
+                    <p><span class="thirdTitle">to create a creative website</span>, dolor sit amet consectetur adipisicing elit. Laudantium vitae sit reiciendis. Quibusdam quas voluptas dolorum rerum, praesentium, eligendi doloremque laboriosam voluptatibus sunt, tempore eius autem numquam dignissimos fuga ad!</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col-33">
+                    <img src="/pictures/pexels-designecologist-1779487.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        
+         <!-- Clarity -->
+         <section style="background-color: black; color: white;">
+            <div class="row">
+                <div class="col-33">
+                    <img src="/pictures/pexels-format-1029757.jpg" alt="">
+                </div>
+                <div class="col-66">
+                    <h1 class="firstTitle">Clarity</h1>
+                    <h2 class="secondTitle">Pixels who?</h2>
+                    <p><span class="thirdTitle">to create a creative website</span>, dolor sit amet consectetur adipisicing elit. Laudantium vitae sit reiciendis. Quibusdam quas voluptas dolorum rerum, praesentium, eligendi doloremque laboriosam voluptatibus sunt, tempore eius autem numquam dignissimos fuga ad!</p>
+                    <button>Read More</button>
+                </div>
+                
+            </div>
+        </section>
+
+         <!-- Why Us -->
+         <section id="whyUs">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="firstTitle">Why Us</h1>
+                    <h2 class="secondTitle">We are the best</h2>
+                    <p><span class="thirdTitle">to create a creative website</span>, dolor sit amet consectetur adipisicing elit. Laudantium vitae sit reiciendis. Quibusdam quas voluptas dolorum rerum, praesentium, eligendi doloremque laboriosam voluptatibus sunt, tempore eius autem numquam dignissimos fuga ad!</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col-33">
+                    <img src="/pictures/pexels-pixabay-270700.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+            <h1 class="firstTitle" style="text-align: center;">Contact Form</h1>
+            <form action="">
+                <label for="">Name</label>
+                <input type="text" required placeholder="Name">
+                <label for="">E-Mail</label>
+                <input type="email" required placeholder="E-Mail">
+                <textarea name="" id="" rows="8"></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <p>&copy;Copyright 2024 Powered by <span>MuratSoftware</span></p>
+    </footer>
+
+
+    <script type="text/javascript">
+        function responsiveMenu(){
+            var x = document.getElementById("topnavID");
+            if (x.className === "topnav") {
+                x.className = x.className + " responsive";
+                
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
